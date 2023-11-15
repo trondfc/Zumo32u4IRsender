@@ -18,17 +18,18 @@ Both the device ID and the message are max 8 bits (0-255)
 
 ## Functions
 ```cpp
-// direction: 0 => right side, 1 => left side
-Zumo32U4IRsender ZumoIrSender(DEVICE_ID, 0);
+// example id = 42
+Zumo32U4IRsender ZumoIrSender(42, RIGHT_IR);
 ```
 ```cpp
-  ZumoIrSender.setDeviceId(DEVICE_ID)
+// example id = 42
+  ZumoIrSender.setDeviceId(42)
 ```
 ```cpp
-// direction: 0 => right side, 1 => left side
-ZumoIrSender.setDirection(0)
+ZumoIrSender.setDirection(RIGHT_IR)
 ```
 ```cpp
+// example message = 0x11
 ZumoIrSender.send(0x11);
 ```
 
@@ -37,7 +38,7 @@ ZumoIrSender.send(0x11);
 #include <Zumo32u4IRsender.h>
 
 #define DEVICE_ID 0x01
-#define DIRECTION 0
+#define DIRECTION RIGHT_IR
 
 Zumo32U4IRsender ZumoIrSender(DEVICE_ID, DIRECTION);
 

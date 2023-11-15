@@ -21,6 +21,9 @@
 #define SUBCARIER_PERIOD 420    // The default frequency is 16000000 / (420 + 1) = 38.005 kHz
 #define IR_BRIGHNESS 50        // 0-400, 0 is off, 400 is max brightness
 
+#define RIGHT_IR 0
+#define LEFT_IR 1
+
 #include <Arduino.h>
 #include <Zumo32U4IRPulses.h>
 

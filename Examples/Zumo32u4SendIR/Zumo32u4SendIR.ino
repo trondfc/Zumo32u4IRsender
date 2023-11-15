@@ -7,9 +7,6 @@
 
 #define DEVICE_ID 42 // ID of the device, used to identify the robot
 
-#define RIGHT_IR 0
-#define LEFT_IR 1
-
 uint64_t lastTime = 0;
 
 // Initialize the IR sender with the device ID and side to be used

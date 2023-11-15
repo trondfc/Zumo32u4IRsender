@@ -14,9 +14,6 @@
 
 #define IR_RECEIVE_PIN 22 //Front proximity sensor pin on the Zumo32U4
 
-#define RIGHT_IR 0
-#define LEFT_IR 1
-
 #define DEVICE_ID 25  // ID of the device, used to identify the robot#define COMMAND_IDENTIFY 0xF0
 #define COMMAND_IDENTIFY 0xF0 // Command for telling the robot to identify itself
 #define COMMAND_IDENTIFYING 0x02 // Command for identifying itself
