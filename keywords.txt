@@ -1,0 +1,20 @@
+#######################################
+# Syntax Coloring Map VirtualPins
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Zumo32U4IRsender	KEYWORD1	Zumo32U4IRsender
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+setDirection	KEYWORD2
+setDeviceId	KEYWORD2
+send	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
