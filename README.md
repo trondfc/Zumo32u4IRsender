@@ -3,12 +3,10 @@ Simple Arduino library for sending [NEC protocol](https://www.digikey.com/en/mak
 
 The library uses the robots built in IR LED normally used for proximity sensing. Due to this, it is not possible to use the library and the proximity sensing at the same time, but they should be usable in alternation.
 
-The library is written to be compatible with the [Iremote library](https://github.com/Arduino-IRremote/Arduino-IRremote) and is suggested to be used together with it. If used together with the Iremote library, the IRemote shuld be set to use pin 22 as IR receiver pin as this is the pin for the front proximity sensor.
-
 ## Usage
 The library is used by including the header file and creating an instance of the Zumo32u4IRsender class. The constructor takes arguments for the device ID and the side of the robot the IR LED is on. The device ID is used to identify the robot and is sent with every message. The side argument is used to determine the direction of the IR LEDs used.
 
-If neaded, the device ID can be changed by calling the setDeviceId function, and the side can be changed by calling the setDirection function.
+If neaded, the device ID can also be changed by calling the setDeviceId function, and the side can be changed by calling the setDirection function.
 
 For sending of IR messaged the function send is used. It takes a single argument, the message byte to be sent. This byte then gets sent along with the device ID in a NEC protocol message.
 
